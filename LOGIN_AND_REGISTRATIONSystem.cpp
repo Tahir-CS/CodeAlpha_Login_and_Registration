@@ -120,7 +120,7 @@ private:
         string password;
         char ch;
         
-        while ((ch = _getch()) != '\r') { // '\r' is Enter key
+        while ((ch = _getch()) != '\r') { // '\r' is Enter key and _getch() is used for password masking
             if (ch == '\b') { // Backspace
                 if (!password.empty()) {
                     password.pop_back();
